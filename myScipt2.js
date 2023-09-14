@@ -20,3 +20,23 @@ console.log(myColor, car.color);
 const myFunction = ({color:c, features: {drive:d}}) => console.log(`Color of my car is ${c} and drive is ${d}`);
 
 myFunction(car);
+
+// array destructuring
+
+// will extract the first element and fourth
+let [first,,,fourth] = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100];
+
+console.log(first, fourth);
+
+// Spread Operator
+// first use to combine two arrays
+// second use to clone an array
+// third use get remaining items in the array
+// fourth use - collect function arguments as an array
+
+let colors = ["red", "blue", "green"];
+let fruits = ["apple", "blueberries", "oranges"];
+
+let newArr = [...colors, ...fruits];
+console.log(newArr);
+
